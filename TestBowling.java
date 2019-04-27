@@ -1,20 +1,21 @@
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
+
 public class TestBowling {
+    @Test
 
-   @Test
-   public void shouldReturnZeroIfGutterGame() {
-      System.out.println("Should return zero if this is a gutter game");
-      Bowling bowling = new Bowling();
-      int count = 0;
-      while ( count < 10)
-      {
-         bowling.addScore(0);
-         bowling.addScore(0);
-         count ++;
-      }
-      assertEquals("Total should be zero",bowling.calcTotal(),0);
+    public void shouldReturnZeroForGutterGame(){
+        String message = "Should return zero";
+        System.out.println(message);
+        Bowling bowling = new Bowling();
+        int count = 0;
+        while (count < 10){
+            bowling.addScore(0);
+            bowling.addScore(0);
+            count++;
+        } 
+        assertEquals(message,bowling.calcTotal(),0);
+    }
 
-   }
 }
