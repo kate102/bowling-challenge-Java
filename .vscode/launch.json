@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Bowling",
+            "request": "launch",
+            "mainClass": "Bowling",
+            "projectName": "bowling-challenge-Java_6c6a694b"
+        }
+    ]
+}
